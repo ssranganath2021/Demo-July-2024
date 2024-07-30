@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-world-deploy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hello-world
@@ -13,7 +13,7 @@ spec:
         app: hello-world
     spec:
       containers:
-      - name: hello-world-image
-        image: hello-world:latest
+      - name: hello-world
+        image: sairanganath/helloworld:1
         ports:
         - containerPort: 80
