@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Configmap
+metadata:
+  name: index-html-configmap
+  namespace: dev-ngil
+data:
+  index.html: |
+    <html>
+    <h1>This is FIrst Kubernetes Page</h1>
+    </html>
